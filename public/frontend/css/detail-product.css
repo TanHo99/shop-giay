@@ -1,0 +1,124 @@
+.SizeSwatch.is-active:after,
+.SizeSwatch__Radio:checked+.SizeSwatch {
+    border-color: #dc232e;
+    color: #383839;
+}
+
+.ColorSwatch.is-active:after,
+.ColorSwatch__Radio:checked+.ColorSwatch {
+    border-color: #dc232e;
+    color: #383839;
+}
+
+.HorizontalList--spacingTight {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.HorizontalList {
+    list-style: none;
+    margin: -6px -8px;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+user agent stylesheet ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.HorizontalList--spacingTight .HorizontalList__Item {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.HorizontalList__Item {
+    display: inline-block;
+    margin: 6px 8px;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    /* -webkit-box-sizing: border-box; */
+    /* box-sizing: border-box; */
+    padding: 0;
+}
+
+.SizeSwatch__Radio {
+    display: none;
+}
+
+.ColorSwatch__Radio {
+    display: none;
+}
+
+input {
+    line-height: normal;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.SizeSwatch {
+    min-width: 80px;
+    padding: 11px 10px;
+    border-radius: 4px;
+}
+
+.SizeSwatch {
+    /* display: inline-block; */
+    /* text-align: center; */
+    /* min-width: 36px; */
+    /* padding: 6px 10px; */
+    border: 1px solid #cfcfcf;
+    color: #383839;
+    cursor: pointer;
+}
+
+.ColorSwatch {
+    min-width: 80px;
+    padding: 11px 10px;
+    border-radius: 4px;
+}
+
+.ColorSwatch {
+    /* display: inline-block; */
+    /* text-align: center; */
+    /* min-width: 36px; */
+    /* padding: 6px 10px; */
+    border: 1px solid #cfcfcf;
+    color: #383839;
+    cursor: pointer;
+}
+
+.label_disabled {
+    background-color: #383839;
+}
