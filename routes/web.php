@@ -10,6 +10,7 @@ use \App\Http\Controllers\ColorController;
 use \App\Http\Controllers\SizeController;
 use \App\Http\Controllers\CartController;
 use \App\Http\Controllers\CheckoutController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +31,10 @@ Route::get('/danhmuc-sanpham/{cate_id}', [CategoryProduct::class, 'show_cate_hom
 Route::get('/thuonghieu-sanpham/{brand_id}', [BrandProduct::class, 'show_brand_home']);
 //Chi tiết sản phẩm trang chủ
 Route::get('/chi-tiet-san-pham/{product_id}', [ProductController::class, 'details_product']);
+// ajax
+Route::get('/ajax_warehouse_quantity', [ProductController::class, 'ajax_warehouse_quantity'])->name('detail.ajax_warehouse_quantity');
+
+
 //backend
 Route::get('/admin', [AdminController::class, 'index']);
 Route::get('/dashboard', [AdminController::class, 'show_dashboard']);

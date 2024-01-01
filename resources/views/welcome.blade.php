@@ -85,6 +85,7 @@
     <link rel="stylesheet" href="{{ asset('public/frontend/css/responsive.css') }}">
 
     <script src="{{ asset('public/frontend/js/vendor/modernizr-2.8.3.min.js') }}"></script>
+    @yield('head')
 </head>
 
 <body class="home-one">
@@ -467,6 +468,7 @@
     <!-- main js
 ============================================ -->
     <script src="{{ asset('public/frontend/js/main.js') }}"></script>
+    @yield('script')
 </body>
 
 </html>
